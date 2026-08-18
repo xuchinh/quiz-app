@@ -1,0 +1,283 @@
+{
+  "authentication": {
+    "register": {
+      "url": "POST http://localhost:8088/api/auth/register",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "name": "John Doe",
+        "email": "john@example.com",
+        "password": "password123"
+      }
+    },
+    "login": {
+      "url": "POST http://localhost:8088/api/auth/login",
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "body": {
+        "email": "john@example.com",
+        "password": "password123"
+      }
+    }
+  },
+  "subjects": {
+    "create": {
+      "url": "POST http://localhost:8088/api/subjects",
+      "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      },
+      "body": {
+        "name": "Mathematics",
+        "description": "Basic mathematics covering algebra, geometry, and calculus"
+      }
+    },
+    "getAll": {
+      "url": "GET http://localhost:8088/api/subjects",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    },
+    "getById": {
+      "url": "GET http://localhost:8088/api/subjects/1",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    },
+    "update": {
+      "url": "PUT http://localhost:8088/api/subjects/1",
+      "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      },
+      "body": {
+        "name": "Advanced Mathematics",
+        "description": "Advanced mathematics including linear algebra and differential equations"
+      }
+    },
+    "delete": {
+      "url": "DELETE http://localhost:8088/api/subjects/1",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    }
+  },
+  "exams": {
+    "create": {
+      "url": "POST http://localhost:8088/api/exams",
+      "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      },
+      "body": {
+        "subjectId": 1,
+        "title": "Math Midterm Exam",
+        "description": "Midterm examination for mathematics course",
+        "durationMinutes": 90,
+        "totalQuestions": 50
+      }
+    },
+    "getAll": {
+      "url": "GET http://localhost:8088/api/exams",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    },
+    "getBySubject": {
+      "url": "GET http://localhost:8088/api/exams/subject/1",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    },
+    "getById": {
+      "url": "GET http://localhost:8088/api/exams/1",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    },
+    "search": {
+      "url": "GET http://localhost:8088/api/exams/search?keyword=math",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    },
+    "update": {
+      "url": "PUT http://localhost:8088/api/exams/1",
+      "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      },
+      "body": {
+        "subjectId": 1,
+        "title": "Math Final Exam",
+        "description": "Final examination for mathematics course",
+        "durationMinutes": 120,
+        "totalQuestions": 100
+      }
+    },
+    "delete": {
+      "url": "DELETE http://localhost:8088/api/exams/1",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    }
+  },
+  "questions": {
+    "create": {
+      "url": "POST http://localhost:8088/api/questions",
+      "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      },
+      "body": {
+        "examId": 1,
+        "questionText": "What is 2 + 2?"
+      }
+    },
+    "getByExam": {
+      "url": "GET http://localhost:8088/api/questions/exam/1",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    },
+    "getById": {
+      "url": "GET http://localhost:8088/api/questions/1",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    },
+    "search": {
+      "url": "GET http://localhost:8088/api/questions/search?keyword=addition",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    },
+    "update": {
+      "url": "PUT http://localhost:8088/api/questions/1",
+      "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      },
+      "body": {
+        "examId": 1,
+        "questionText": "What is 3 + 3?"
+      }
+    },
+    "delete": {
+      "url": "DELETE http://localhost:8088/api/questions/1",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    }
+  },
+  "options": {
+    "create": {
+      "url": "POST http://localhost:8088/api/options",
+      "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      },
+      "body": {
+        "questionId": 1,
+        "optionText": "4",
+        "isCorrect": true
+      }
+    },
+    "createWrong": {
+      "url": "POST http://localhost:8088/api/options",
+      "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      },
+      "body": {
+        "questionId": 1,
+        "optionText": "5",
+        "isCorrect": false
+      }
+    },
+    "getByQuestion": {
+      "url": "GET http://localhost:8088/api/options/question/1",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    },
+    "getById": {
+      "url": "GET http://localhost:8088/api/options/1",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    },
+    "update": {
+      "url": "PUT http://localhost:8088/api/options/1",
+      "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      },
+      "body": {
+        "questionId": 1,
+        "optionText": "4",
+        "isCorrect": true
+      }
+    },
+    "delete": {
+      "url": "DELETE http://localhost:8088/api/options/1",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    }
+  },
+  "examAttempts": {
+    "submit": {
+      "url": "POST http://localhost:8088/api/exam-attempts/submit",
+      "headers": {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      },
+      "body": {
+        "examId": 1,
+        "answers": [
+          {
+            "questionId": 1,
+            "selectedOptionId": 1
+          },
+          {
+            "questionId": 2,
+            "selectedOptionId": 4
+          },
+          {
+            "questionId": 3,
+            "selectedOptionId": 7
+          }
+        ]
+      }
+    },
+    "getMyAttempts": {
+      "url": "GET http://localhost:8088/api/exam-attempts/my-attempts",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    },
+    "getDetail": {
+      "url": "GET http://localhost:8088/api/exam-attempts/1",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    }
+  },
+  "users": {
+    "getProfile": {
+      "url": "GET http://localhost:8088/api/users/profile",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    },
+    "getStatistics": {
+      "url": "GET http://localhost:8088/api/users/statistics",
+      "headers": {
+        "Authorization": "Bearer YOUR_TOKEN_HERE"
+      }
+    }
+  }
+}

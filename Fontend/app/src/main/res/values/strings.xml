@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ứng Dụng Quiz</string>
+
+    <!-- Login & Register -->
+    <string name="login">Đăng Nhập</string>
+    <string name="register">Đăng Ký</string>
+    <string name="email">Email</string>
+    <string name="password">Mật Khẩu</string>
+    <string name="name">Họ Và Tên</string>
+    <string name="dont_have_account">Chưa có tài khoản?</string>
+    <string name="already_have_account">Đã có tài khoản?</string>
+    <string name="sign_up">Đăng Ký</string>
+    <string name="sign_in">Đăng Nhập</string>
+    <string name="login_failed">Thông tin đăng nhập không chính xác</string>
+    <string name="register_failed">Đăng ký thất bại</string>
+
+    <!-- Main -->
+    <string name="welcome">Chào Mừng</string>
+    <string name="start_quiz">Bắt Đầu Quiz</string>
+    <string name="view_history">Xem Lịch Sử</string>
+    <string name="logout">Đăng Xuất</string>
+    <string name="profile">Hồ Sơ</string>
+    <string name="statistics">Thống Kê</string>
+
+    <!-- Subjects -->
+    <string name="subjects">Các Chủ Đề</string>
+    <string name="choose_subject">Chọn Một Chủ Đề</string>
+    <string name="subject_name">Tên Chủ Đề</string>
+    <string name="subject_description">Mô Tả</string>
+
+    <!-- Exams -->
+    <string name="exams">Các Bài Thi</string>
+    <string name="choose_exam">Chọn Bài Thi</string>
+    <string name="duration">Thời Gian</string>
+    <string name="questions">Câu Hỏi</string>
+    <string name="minutes">phút</string>
+    <string name="exam_title">Tiêu Đề Bài Thi</string>
+    <string name="exam_description">Mô Tả Bài Thi</string>
+    <string name="total_questions">Tổng Câu Hỏi</string>
+    <string name="exam_load_failed">Tải bài thi thất bại</string>
+
+    <!-- Quiz -->
+    <string name="question">Câu Hỏi</string>
+    <string name="next">Tiếp Theo</string>
+    <string name="previous">Quay Lại</string>
+    <string name="submit">Nộp Bài</string>
+    <string name="finish">Kết Thúc</string>
+    <string name="time_remaining">Thời Gian Còn Lại</string>
+    <string name="out_of_time">Hết thời gian!</string>
+    <string name="no_questions">Không có câu hỏi nào</string>
+    <string name="submit_exam_failed">Nộp bài thất bại</string>
+
+    <!-- Result -->
+    <string name="result">Kết Quả</string>
+    <string name="score">Điểm Số</string>
+    <string name="correct">Đúng</string>
+    <string name="wrong">Sai</string>
+    <string name="percentage">Phần Trăm</string>
+    <string name="view_answers">Xem Lời Giải</string>
+    <string name="hide_answers">Ẩn Lời Giải</string>
+    <string name="back_to_home">Quay Về Trang Chủ</string>
+    <string name="your_answer">Câu Trả Lời Của Bạn</string>
+    <string name="correct_answer">Câu Trả Lời Đúng</string>
+    <string name="load_result_failed">Tải kết quả thất bại</string>
+    <string name="correct_mark">✓ Đúng</string>
+    <string name="wrong_mark">✗ Sai</string>
+    <string name="no_exam">Không có bài kiểm tra nào</string>
+
+    <!-- History -->
+    <string name="history">Lịch Sử</string>
+    <string name="no_history">Chưa có lần làm bài nào</string>
+    <string name="attempt_on">Làm vào lúc</string>
+    <string name="load_history_failed">Tải lịch sử thất bại</string>
+    <string name="exam_name">Tên Bài Thi</string>
+    <string name="attempt_date">Ngày Làm Bài</string>
+
+    <!-- Profile -->
+    <string name="user_profile">Hồ Sơ Người Dùng</string>
+    <string name="edit_profile">Chỉnh Sửa Hồ Sơ</string>
+    <string name="save_changes">Lưu Thay Đổi</string>
+    <string name="user_name">Tên Người Dùng</string>
+    <string name="update_profile_success">Cập nhật hồ sơ thành công</string>
+    <string name="update_profile_failed">Cập nhật hồ sơ thất bại</string>
+    <string name="load_profile_failed">Tải hồ sơ thất bại</string>
+
+    <!-- Statistics -->
+    <string name="user_statistics">Thống Kê Người Dùng</string>
+    <string name="total_attempts">Tổng Lần Làm Bài</string>
+    <string name="average_score">Điểm Trung Bình</string>
+    <string name="total_correct">Tổng Câu Đúng</string>
+    <string name="load_statistics_failed">Tải thống kê thất bại</string>
+
+    <!-- Messages -->
+    <string name="loading">Đang Tải…</string>
+    <string name="error">Lỗi</string>
+    <string name="success">Thành Công</string>
+    <string name="network_error">Lỗi kết nối. Vui lòng kiểm tra lại kết nối.</string>
+    <string name="fill_all_fields">Vui lòng điền tất cả các trường</string>
+    <string name="answer_all_questions">Vui lòng trả lời tất cả câu hỏi</string>
+    <string name="submit_confirmation">Bạn có chắc chắn muốn nộp bài không?</string>
+    <string name="logout_confirmation">Bạn có chắc chắn muốn đăng xuất không?</string>
+    <string name="yes">Có</string>
+    <string name="no">Không</string>
+    <string name="cancel">Hủy</string>
+    <string name="ok">Đồng Ý</string>
+    <string name="retry">Thử Lại</string>
+    <string name="no_data">Không có dữ liệu</string>
+
+    <string name="quick_stats">Quick Stats</string>
+    <string name="total_exams">Total Exams</string>
+    <string name="avg_score">Avg Score</string>
+    <string name="best_score">Best Score</string>
+    <string name="account_actions">Account Actions</string>
+    <string name="view_statistics">View Statistics</string>
+
+    <!-- Result Activity -->
+    <string name="exam_result">Exam Result</string>
+    <string name="your_score">Your Score</string>
+    <string name="excellent">Excellent!</string>
+    <string name="good_job">Good Job!</string>
+    <string name="not_bad">Not Bad!</string>
+    <string name="keep_trying">Keep Trying!</string>
+    <string name="details">Details</string>
+    <string name="completed_at">Completed At</string>
+    <string name="try_again">Try Again</string>
+</resources>
